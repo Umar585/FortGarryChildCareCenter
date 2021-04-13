@@ -1,0 +1,19 @@
+#Begin
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule . /index.php [L]
+
+Redirect /index.htm http://fgccc.ca/index.html
+Redirect fgccc.ca http://fgccc.ca/index.html
+Redirect https://direct3.gov.mb.ca/daycare/fs/fs.nsf/0/F61E0CDECCDBDC61862582560067F718?OpenDocument&LANG=1&PRT=Yes http://fgccc.ca/index.html
+Redirect https://mitt.ca/current-students/fort-garry-child-care-centre-co-op http://fgccc.ca/index.html
+
+#change the default landing page to follow these files from left to right
+DirectoryIndex index.html index.php index.htm
+</IfModule>
+

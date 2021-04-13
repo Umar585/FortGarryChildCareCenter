@@ -1,0 +1,323 @@
+/*
+colors
+#264653 dark blue
+#2A9D8F light blue
+#E9C46A light yellow
+#F4A261 light orange
+#E76F51 dark orange
+*/
+/*Custom Fonts*/
+@font-face {
+    font-family: MYRIADPRO-BOLD;
+    src: url('../font/MYRIADPRO-BOLD.woff');
+}
+@font-face {
+    font-family: MYRIADPRO-REGULAR;
+    src: url('../font/MYRIADPRO-REGULAR.woff');
+}
+@font-face {
+    font-family: MYRIADPRO-LIGHT;
+    src: url('../font/MyriadPro-Light.woff');
+}
+/*Body*/
+body{
+    font-family:MYRIADPRO-REGULAR;
+    scroll-behavior: smooth;
+}
+/*Navbar*/
+.navbar{
+    font-family:MYRIADPRO-BOLD;
+    background-color: #ffffff;
+}
+.navbar .navbar-brand img{
+    width: auto;
+    min-height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    image-orientation: from-image;
+}
+.navbar .nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 15px !important;
+}
+.navbar .nav-item a:hover{
+    border-radius: 5px;
+    min-width: 100px;
+    background-color: #E76F51;
+    color: white !important;
+}
+.nav-active-link{
+    border-radius: 5px;
+    min-width: 100px;
+    background-color: #E76F51;
+    color: white !important;
+}
+/*sidenav icons*/
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  .phone {
+    background: #2A9D8F;
+    color: white;
+  }
+  .map-pin {
+    background: #264653;
+    color: white;
+  }
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+/*index page*/
+#indexpage .custom-bg-img{
+    width: 100%;
+    height: calc(80vh + 40px);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/marisa-howenstine2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#indexpage .custom-bg-img .img-text{
+    position: relative;
+    color: white;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-direction: column;
+}
+#indexpage .custom-bg-img .img-text #second-heading{
+    font-family: MYRIADPRO-LIGHT;
+}
+#indexpage .custom-bg-img a{
+padding: 10px 20px;
+font-family: MYRIADPRO-LIGHT;
+}
+/*indexpage jumbotron*/
+#indexpage .jumbotron{
+    color: white;
+}
+
+#indexpage .jumbotron .row .col-md-3{
+    font-family: MYRIADPRO-LIGHT;
+}
+/*About us*/
+/*ourmission*/
+.ourmission .my-jumbotron{
+    width: 100%;
+    height: calc(50vh + 40px);
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/robert-collins2.jpg');
+}
+.ourmission .my-jumbotron h4{
+    font-family: MYRIADPRO-LIGHT;
+    color: #264653
+}
+.ourmission .philosophy img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+/*board-staff*/
+.board-staff{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.employees .jumbtron{
+    width: 100%;
+    height: calc(50vh + 40px);
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url('../img/element5-digital2.jpg');
+}
+.employees .jumbtron .img-text{
+    position: relative;
+    color: white;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*volunteer*/
+.volunteer .side-link ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.volunteer .side-link ul li{
+    border-left: 5px solid white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.volunteer .side-link ul li a{
+    color: black;
+    text-decoration: none;
+}
+.volunteer .side-link ul li:hover {
+    border-left: 5px solid #E76F51;
+}
+.volunteer .side-link ul li a:hover {
+    color: white;
+}
+/*locations*/
+.contactus .location-bg-img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-image: url('../img/location.jpg');*/
+    background-color: gray;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactus .location-bg-img .row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contactus .location-bg-img .location-4 .row .card{
+    margin-top: 5px;
+}
+/*Footer*/
+.footer{
+    padding-top: 20px;
+    background-color: grey;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width: 1024px) {
+    /*ourmission*/
+    .ourmission .ourmission-pg p{
+        max-width: 500px !important;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .contactus .location-bg-img .location-4 .row .card{
+        text-align: left !important;
+    }
+    .volunteer .row .col-md-3{
+        display: none;
+    }
+    .volunteer .row .col-md-9{
+        border-left: none !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #indexpage .jumbotron .row .col-md-3{
+        margin-top: 20px;
+    }
+    /*ourmission*/
+    .ourmission .ourmission-pg p{
+        max-width: 300px !important;
+        font-size: x-large;
+    }
+    /*about-us*/
+    .ourmission .about-us li{
+        padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /*ourmission*/
+    .ourmission .ourmission-pg{
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 744px) {
+    /*ourmission*/
+    .ourmission .ourmission-pg p{
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+}
+@media only screen and (max-width: 573px) {
+    /*contactus*/
+    .contactus .row{
+        text-align: left !important;
+    }
+}
+@media only screen and (max-width: 425px) {
+    #indexpage .custom-bg-img .img-text .h1{
+        text-align: center !important;
+        margin-top: -150px;
+    }
+    #indexpage .custom-bg-img .img-text #second-heading{
+        text-align: center;
+    }
+    #indexpage .custom-bg-img a{
+        display: block !important;  
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #indexpage .custom-bg-img .img-text .h1{
+        font-size: xx-large !important;
+    }
+    #indexpage .custom-bg-img .img-text #second-heading{
+        font-size: x-large !important;
+    }
+    #indexpage .custom-bg-img a{
+        font-size: large !important;
+    }
+}
+  
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Changing color for login link*/
+#loginlink {
+    background: #E76F51;
+    animation: mymove 5s infinite;
+    color: white;
+  }
+  
+  @keyframes mymove {
+    0% {background-color: #E76F51;}
+    25% {background-color: #2A9D8F;}
+    50% {background-color: #E76F51;}
+    75% {background-color: #2A9D8F;}
+    100% {background-color: #E76F51;}
+  }
